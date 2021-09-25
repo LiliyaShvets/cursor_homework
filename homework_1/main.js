@@ -4,13 +4,13 @@ const pricePeach = 90.2345;
 
 
 // 1
-const maxPrice = Math.max(15.678, 123.965, 90.2345);
+const maxPrice = Math.max(priceApple, priceMango, pricePeach);
 
 console.log(maxPrice);
 
 
 // 2
-const minPrice = Math.min(15.678, 123.965, 90.2345);
+const minPrice = Math.min(priceApple, priceMango, pricePeach);
 
 console.log(minPrice);
 
@@ -34,9 +34,9 @@ console.log(amountFruitsHandredRounded);
 
 
 // 6 
-const amountamountFruitsLog = (amountFruitsRounded % 2 === 0);
+const amountamountFruitsLog = amountFruitsRounded % 2 === 0;
 
-console.log(Boolean(amountamountFruitsLog));
+console.log(amountamountFruitsLog);
 
 
 // 7
@@ -48,16 +48,16 @@ console.log(remainder);
 // 8
 const averagePrice = (priceApple + priceMango + pricePeach) / 3;
 
-console.log(averagePrice.toFixed(2));
+console.log(+averagePrice.toFixed(2));
 
 
 // 9
-const sale = Math.random();
-const amountForPay = amountFruits - amountFruits * sale;
-const profit = amountFruits/2 - amountForPay;
+const sale = Math.random()*100;
+const amountForPay = amountFruits - amountFruits * sale/100;
+const profit = amountFruits/2 - amountFruits * sale/100;
 
 console.log(sale);
-console.log(amountForPay.toFixed(2));
+console.log(+amountForPay.toFixed(2));
 console.log(profit);
 
 
@@ -67,9 +67,10 @@ const results = `Максимальна ціна: ${maxPrice}<br/>
 Вартість всіх товарів: ${amountFruits}<br/>
 Округлена вартість всіх товарів до цілих чисел: ${amountFruitsRounded}<br/>
 Округлена до сотень вартість всіх товарів: ${amountFruitsHandredRounded}<br/>
-Cума всіх товарів (округлена в меншу сторону) є парним числом: ${Boolean(amountamountFruitsLog)}<br/>
+Cума всіх товарів (округлена в меншу сторону) є парним числом: ${amountamountFruitsLog}<br/>
 Сума решти, при оплаті всіх товарів, якщо клієнт платить 500 грн: ${remainder}<br/>
-Cереднє значення цін, округлене до другого знаку після коми: ${averagePrice.toFixed(2)}<br/>
+Cереднє значення цін, округлене до другого знаку після коми: ${+averagePrice.toFixed(2)}<br/>
+Cума до оплати округлену до 2 знаків після коми, коли клієнту зробили випадкову зничку: ${+amountForPay.toFixed(2)}<br/>
 Чистий прибуток, якщо клієнт заплатив зі знижкою та собівартість товарів рівно в два рази нижче їх ціни: ${profit}`;
 
 document.writeln(results);
