@@ -28,7 +28,7 @@ console.log(amountFruitsRounded);
 
 
 // 5
-const amountFruitsHandredRounded = Math.round(amountFruitsRounded/100) * 100;
+const amountFruitsHandredRounded = Math.round(amountFruitsRounded / 100) * 100;
 
 console.log(amountFruitsHandredRounded);
 
@@ -40,7 +40,8 @@ console.log(amountamountFruitsLog);
 
 
 // 7
-const remainder = 500 - amountFruits;
+const totalAmountOfMoney = 500;
+const remainder = totalAmountOfMoney - amountFruits;
 
 console.log(remainder);
 
@@ -52,9 +53,9 @@ console.log(+averagePrice.toFixed(2));
 
 
 // 9
-const sale = Math.random()*100;
-const amountForPay = amountFruits - amountFruits * sale/100;
-const profit = amountFruits/2 - amountFruits * sale/100;
+const sale = Math.random() * 100;
+const amountForPay = amountFruits - amountFruits * sale / 100;
+const profit = amountFruits / 2 - amountFruits * sale / 100;
 
 console.log(sale);
 console.log(+amountForPay.toFixed(2));
