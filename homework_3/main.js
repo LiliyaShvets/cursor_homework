@@ -1,12 +1,10 @@
 // Функція №1 
 
-const getMaxDigit = () => {
-    const randomNumber = Math.trunc(Math.random() * 10000);
+const getMaxDigit = (randomNumber) => {
     const arrayOfDigits = Array.from(String(randomNumber), Number);
 
     return Math.max(...arrayOfDigits);
 };
-
 
 
 // Функція №2 
@@ -25,13 +23,21 @@ const getPowNumber = (x, n) => {
 
 
 // Функція №3
+// const getCapitalizedName = (name) => {
+
+//     for (let i = 0; i < name.length; i++){
+//         lower = name.toLowerCase();
+//         firstLetter = lower.slice(0, 1);
+//         capitalized = lower.replace(firstLetter, firstLetter.toUpperCase());
+//     }
+//     return capitalized;
+// };
+
 const getCapitalizedName = (name) => {
 
-    for (let i = 0; i < name.length; i++){
-        lower = name.toLowerCase();
-        firstLetter = lower.slice(0, 1);
-        capitalized = lower.replace(firstLetter, firstLetter.toUpperCase());
-    }
+    const lower = name.toLowerCase();
+    const firstLetter = lower.slice(0, 1);
+    const capitalized = lower.replace(firstLetter, firstLetter.toUpperCase());
     return capitalized;
 };
 
@@ -39,7 +45,7 @@ const getCapitalizedName = (name) => {
 // Функція №4
 const calculationSalary = (salary) => {
     const tax = salary * 0.195;
-    return salary = salary - tax;
+    return salary - tax;
 };
 
 
@@ -91,7 +97,7 @@ const deleteDuplicateLetter = (str) => {
 
 document.writeln(
     `
-    Функція №1: ${getMaxDigit()}</br>
+    Функція №1: ${getMaxDigit(757489)}</br>
     Функція №2: ${getPowNumber(3, 3)}</br>
     Функція №3: ${getCapitalizedName("ВлаД")}</br>
     Функція №4: ${calculationSalary(4700)}</br>
