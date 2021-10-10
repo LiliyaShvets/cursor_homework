@@ -8,17 +8,17 @@ const girls = students.filter(student => student.slice(-1) === "а");
 const boys = students.filter(student => !girls.includes(student));
 
 const pairs = [];
-for (let i = 0; i < girls.length && i < boys.length; i++) {
+for (let i = 0; i < girls.length; i++) {
     pairs[i] = [girls[i], boys[i]];
 }
 
 const pairsCommon = [];
-for (let i = 0; i < girls.length && i < boys.length; i++) {
+for (let i = 0; i < girls.length; i++) {
     pairsCommon[i] = [girls[i] + ` і ` + boys[i]];
 }
 
 const themesForPairs = [];
-for (let j = 0; j < pairsCommon.length && j < themes.length; j++) {
+for (let j = 0; j < pairsCommon.length; j++) {
     themesForPairs[j] = [pairsCommon[j] + `, ` + themes[j]];
 }
 
