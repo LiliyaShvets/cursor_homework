@@ -27,16 +27,4 @@ document.writeln(`Сумма введених чисел: ${numbersSum}`);
 
 
 
-// while ( true )
-// {  
-//     var variable1 = prompt ('Write "2", please');
-
-//     if ( variable1 == 2 ) break;
-
-//     alert( "Error. Invalid value" ); 
-// }
-
-// if (numberN !== numberN.trim()) {
-//     numberN = prompt("Введіть ціле число N"); 
-// }
 
