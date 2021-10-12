@@ -1,6 +1,12 @@
+// let numberN;
+// while (!Number.isInteger(numberN) || !numberN){
+//     numberN = +prompt("Введіть ціле число N"); 
+// };
+
 let numberN;
-while (!Number.isInteger(numberN) || !numberN){
-    numberN = +prompt("Введіть ціле число N"); 
+while (!Number.isInteger(numberN) || !numberN || n === n.trim()){
+    n = prompt("Введіть ціле число N");
+    numberN = +n;
 };
 
 
