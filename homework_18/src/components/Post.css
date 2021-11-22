@@ -1,0 +1,22 @@
+.PostTitle {
+    display: flex;
+    align-items: center;
+}
+.PostPhoto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.PostName {
+    margin-left: 30px;
+}
+.PostSubtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.PostImage {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 20px;
+}
