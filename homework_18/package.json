@@ -2,7 +2,7 @@
   "name": "cursor_react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://liliyashvets.github.io/cursor_homework/homework_18/",
+  "homepage": "https://liliyashvets.github.io/cursor_homework/react",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "eact-scripts build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
