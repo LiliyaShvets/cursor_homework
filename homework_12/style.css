@@ -1,0 +1,33 @@
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.container {
+   max-width: 1200px; 
+   margin: 200px auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.audio-btn {
+    width: 100px;
+    min-height: 50px;
+    border: 2px solid #aeadad;
+    background-color: #cfcece;
+    border-radius: 5px;
+    margin: 0 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 1s;
+}
+.audio-btn:hover {
+    box-shadow: 0 0 10px #404e4c;
+}
+.audio-btn span {
+    text-align: center;
+    color: #474646;
+}
